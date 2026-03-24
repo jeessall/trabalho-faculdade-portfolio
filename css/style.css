@@ -139,3 +139,31 @@ body{
 .redes-sociais .github{
     background-color: #545454;
 }
+
+.redes-sociais .formacao {
+    background-color: #fa1212;
+}
+
+.redes-sociais .Django{
+    background-color: #06c185;
+}
+
+.redes-sociais .Askbot{
+    background-color: #1d87bd;
+}
+
+.redes-sociais .Listas{
+    background-color: #545454;
+}
+
+.redes-sociais .Quizz {
+    background-color: #fa1212;
+}
+
+.redes-sociais .POO {
+    background-color: hsl(298, 88%, 48%);
+}
+
+.redes-sociais .Voltar {
+    background-color: #3512fa;
+}
