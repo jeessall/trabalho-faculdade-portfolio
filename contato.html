@@ -20,16 +20,16 @@
             <div class="conteudo">
                 <div class="informacoes-abas">
                     <div class="informacao selecionado">
-                        <form action="mailto:pedroso.je26@gmail.com" method="post" enctype="text/plain" class="formulario-contato">
+                        <form class="formulario-contato" onsubmit="enviarFormulario(event)">
                             
                             <label>Seu nome</label>
-                            <input type="text" name="nome" required>
+                            <input type="text" id="nome" name="nome" required>
 
                             <label>email</label>
-                            <input type="email" name="email" required>
+                            <input type="email" id="email" name="email" required>
 
                             <label>Mensagem</label>
-                            <textarea name="mensagem" rows="5" required></textarea>
+                            <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
 
                             <button type="submit">Enviar</button>
                         </form>
@@ -38,5 +38,8 @@
             </div>
         </div>
     </main>
+
+    <script src="/index.js"></script>
+    
 </body>
 </html>

@@ -52,3 +52,28 @@ function mostrarInformacoesDaAba(aba){
     const informacaoASerMostrada = document.getElementById(idDoElementoDeInformacoesDaAba)
     informacaoASerMostrada.classList.add("selecionado")
 }
+
+//validação do envio do formulario simulatorio
+function enviarFormulario(event) {
+    event.preventDefault();
+
+    var nome = document.getElementById("nome").value;
+    var email = document.getElementById("email").value;
+    var mensagem = document.getElementById("mensagem").value;
+
+    if (nome === "" || email === "" || mensagem === "") {
+        alert("Preencha todos os campos!");
+        return;
+    }
+
+    if (!email.includes("@")) {
+        alert("Digite um email válido!");
+        return;
+    }
+
+    alert("Mensagem enviada com sucesso!");
+
+    document.getElementById("nome").value = "";
+    document.getElementById("email").value = "";
+    document.getElementById("mensagem").value = "";
+}
